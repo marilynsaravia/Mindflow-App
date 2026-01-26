@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "question": "How many positive integers less than 904 are divisible by 3?",
+    "answers": [
+      "300",
+      "301",
+      "302",
+      "303"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "301",
+    "explanation": "The largest multiple of 3 less than 904 is 903. 903 divided by 3 is 301."
+  },
+  {
+    "id": 2,
+    "question": "What comes next in the sequence: 4, 16, 64, 256?",
+    "answers": [
+      "512",
+      "768",
+      "1024",
+      "2048"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "1024",
+    "explanation": "Each number is multiplied by 4: 4×4, 16×4, 64×4, so 256×4 = 1024."
+  }
+]
