@@ -14,7 +14,7 @@ This application is built with **React**, **TypeScript**, and **Tailwind CSS**. 
 
 I designed the interface using **Figma** to plan the user experience and visual identity before development.
 
-<img width="1312" height="617" alt="image" src="https://github.com/user-attachments/assets/1c3a6ae1-e0b1-4970-a72b-f75ef477694d" />
+<img width="913" height="515" alt="image" src="https://github.com/user-attachments/assets/9729ed2d-53fd-4c49-999d-7731861e0a56" />
 
 
 # Screenshot
