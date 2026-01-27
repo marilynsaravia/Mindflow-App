@@ -28,7 +28,6 @@ Click the following link: (Comming Soon)
 # Built With
 
 ### Client:
-- **[React](https://react.dev/):** A JavaScript library for building user interfaces.
 - **[Vite](https://vitejs.dev/):** A fast and modern frontend build tool and development server.
 - **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
 - **[TypeScript](https://www.typescriptlang.org/):** A strongly typed programming language that builds on JavaScript.
