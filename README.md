@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mindflow App
 
-## Getting Started
+Mindflow is a calm and friendly problem-solving platform designed to help users improve their reasoning skills at their own pace. The experience avoids stress and pressure, focusing instead on clarity, encouragement and smooth interactions.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application is built with **React**, **TypeScript**, and **Tailwind CSS**. It offers an intuitive user experience with a clean, minimalist design to avoid cognitive overload. Users can explore a wide variety of randomized questions where they can:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Train the mind:** Engage in reasoning exercises designed to sharpen cognitive skills.
+* **Learn from mistakes:** If an answer is wrong, the app explains the "why" behind the correct result to ensure continuous learning.
+* **Track performance:** Get a final score to visualize successes and areas for improvement.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I designed the interface using **Figma** to plan the user experience and visual identity before development.
 
-## Learn More
+<img width="1312" height="617" alt="image" src="https://github.com/user-attachments/assets/1c3a6ae1-e0b1-4970-a72b-f75ef477694d" />
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+(Comming Soon)
 
-## Deploy on Vercel
+# Demo 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Click the following link: (Comming Soon)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Built With
+
+### Client:
+- **[React](https://react.dev/):** A JavaScript library for building user interfaces.
+- **[Vite](https://vitejs.dev/):** A fast and modern frontend build tool and development server.
+- **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
+- **[TypeScript](https://www.typescriptlang.org/):** A strongly typed programming language that builds on JavaScript.
+  
+# Getting Started
+
+(Comming Soon)
+
+# Author
+:v: [@marilynsaravia](https://github.com/marilynsaravia)
