@@ -25,15 +25,21 @@ export default function QuestionArea() {
       {/* Button */}
       <button
         className="
-          w-full
+          w-full 
           mt-8
-          bg-[#33B786]
-          hover:bg-[#2aa173]
-          transition
-          text-white
-          font-medium
-          py-4
-          rounded-md
+        bg-[#27D89D] 
+        hover:bg-[#1fb585] 
+          transition-colors 
+          duration-200
+          text-center
+        text-white 
+          font-semibold 
+          py-3 
+          rounded-lg 
+          text-lg
+          shadow-md
+          cursor-pointer
+          focus:outline-none focus:ring-2 focus:ring-[#27D89D] focus:ring-offset-2
         "
       >
         Check answer
