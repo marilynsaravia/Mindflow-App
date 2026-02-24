@@ -1,28 +1,142 @@
 [
   {
     "id": 1,
-    "question": "How many positive integers less than 904 are divisible by 3?",
+    "category": "Algorithmic Efficiency",
+    "question": "You need to check if a string of 1 million characters is a palindrome. What is the most space-efficient way to do this?",
     "answers": [
-      "300",
-      "301",
-      "302",
-      "303"
+      "Create a reversed copy of the string and compare it to the original.",
+      "Use two pointers (start and end) and move them toward the center, comparing characters.",
+      "Use a Stack to push all characters and then pop them to compare.",
+      "Recursively call a function that slices the first and last characters."
     ],
     "correctIndex": 1,
-    "correctAnswer": "301",
-    "explanation": "The largest multiple of 3 less than 904 is 903. 903 divided by 3 is 301."
+    "correctAnswer": "Use two pointers (start and end) and move them toward the center.",
+    "explanation": "Two-pointer approach uses O(1) extra space. Reversing the string or using a stack would require O(n) extra memory, which is inefficient for very large strings."
   },
   {
     "id": 2,
-    "question": "What comes next in the sequence: 4, 16, 64, 256?",
+    "category": "System Design / Scalability",
+    "question": "Your API is experiencing high latency due to frequent, identical database queries. Which caching strategy is most effective for data that changes every 5 minutes?",
     "answers": [
-      "512",
-      "768",
-      "1024",
-      "2048"
+      "Client-side LocalStorage caching.",
+      "Write-through caching in the database.",
+      "Distributed Cache (e.g., Redis) with a TTL (Time To Live).",
+      "Hardcoding the results in the application code."
     ],
     "correctIndex": 2,
-    "correctAnswer": "1024",
-    "explanation": "Each number is multiplied by 4: 4×4, 16×4, 64×4, so 256×4 = 1024."
+    "correctAnswer": "Distributed Cache (e.g., Redis) with a TTL.",
+    "explanation": "A distributed cache allows multiple app instances to share the data. A TTL (Time To Live) ensures the data is automatically refreshed after it becomes stale (e.g., every 5 minutes)."
+  },
+  {
+    "id": 3,
+    "category": "Mathematics / Binary Logic",
+    "question": "A bitwise 'AND' operation is performed on 12 (binary 1100) and 10 (binary 1010). What is the decimal result?",
+    "answers": [
+      "14",
+      "8",
+      "12",
+      "2"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "8",
+    "explanation": "1100 AND 1010 results in 1000. In decimal, 1000 is 8."
+  },
+  {
+    "id": 4,
+    "category": "Data Structures",
+    "question": "Which data structure would you use to implement a 'Undo' feature in a text editor?",
+    "answers": [
+      "Queue (FIFO)",
+      "Stack (LIFO)",
+      "Hash Table",
+      "Linked List"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Stack (LIFO)",
+    "explanation": "Undo operations follow the 'Last-In, First-Out' principle. The last action performed is the first one to be reversed."
+  },
+  {
+    "id": 5,
+    "category": "Performance Optimization",
+    "question": "When optimizing a React or Vue frontend application, what is the primary purpose of 'Code Splitting'?",
+    "answers": [
+      "To make the code easier for developers to read.",
+      "To reduce the initial bundle size and speed up the first paint.",
+      "To encrypt the source code for security.",
+      "To allow multiple programmers to work on the same file."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "To reduce the initial bundle size and speed up the first paint.",
+    "explanation": "Code splitting allows you to load only the JavaScript needed for the current page, deferring the rest and significantly improving load times."
+  },
+  {
+    "id": 6,
+    "category": "Big O / Logic",
+    "question": "You have a sorted array of 1,024 elements. What is the maximum number of comparisons a Binary Search will take to find an element?",
+    "answers": [
+      "1,024",
+      "512",
+      "10",
+      "20"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "10",
+    "explanation": "Binary Search complexity is O(log2 n). Since 2^10 = 1,024, it takes at most 10 steps to find the target or determine it's not there."
+  },
+  {
+    "id": 7,
+    "category": "Backend Architecture",
+    "question": "What is the main risk of using a 'Monolithic' architecture as a development team grows very large?",
+    "answers": [
+      "Increased infrastructure costs.",
+      "Deployment bottlenecks and tight coupling between modules.",
+      "It is impossible to use modern languages.",
+      "Users will experience slower internet speeds."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Deployment bottlenecks and tight coupling.",
+    "explanation": "In a large monolith, a change in one small part requires redeploying the whole system, and teams often step on each other's toes due to high interdependence."
+  },
+  {
+    "id": 8,
+    "category": "Mathematics / Probability",
+    "question": "A server has a 99.9% uptime (Three Nines). Roughly how much downtime is allowed per year?",
+    "answers": [
+      "8.77 hours",
+      "3.65 days",
+      "52 minutes",
+      "1 hour"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "8.77 hours",
+    "explanation": "0.1% of a year (365 days * 24 hours) is 8.766 hours. This is a standard metric for High Availability (HA)."
+  },
+  {
+    "id": 9,
+    "category": "Security / Web",
+    "question": "What is the best way to prevent SQL Injection in a modern application?",
+    "answers": [
+      "Manually stripping out single quotes from user input.",
+      "Using Prepared Statements (Parameterized Queries).",
+      "Changing the database password every month.",
+      "Using a front-end validation library."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Using Prepared Statements (Parameterized Queries).",
+    "explanation": "Prepared statements ensure that the database treats user input as data, not as executable code, neutralizing the injection attempt."
+  },
+  {
+    "id": 10,
+    "category": "Concurrency",
+    "question": "What is a 'Deadlock' in multi-threaded programming?",
+    "answers": [
+      "A thread that finishes its execution too early.",
+      "Two or more threads are waiting for each other to release resources, causing a permanent stall.",
+      "A bug that causes the computer to shut down.",
+      "When a database table is deleted by mistake."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Two or more threads are waiting for each other to release resources.",
+    "explanation": "Deadlock occurs when Thread A holds Resource 1 and waits for Resource 2, while Thread B holds Resource 2 and waits for Resource 1. Neither can proceed."
   }
 ]
