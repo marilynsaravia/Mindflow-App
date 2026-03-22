@@ -18,7 +18,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Title */}
+          {/* Tiitle */}
           <h1 className="text-white text-5xl md:text-6xl font-semibold leading-tight mb-8">
             A stress-free way to <br /> test your reasoning
           </h1>

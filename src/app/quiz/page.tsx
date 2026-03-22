@@ -14,62 +14,70 @@ export default function Quiz() {
 
   const userName = searchParams.get("name") || "Guest";
 
+  // --- QUIZ STATES ---
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
+  const [score, setScore] = useState(0); // New state for tracking correct answerss
 
-  // show image ONLY the first time user enters
+  // Controls showing the intro image ONLY the first time the user enters
   const [hasCheckedOnce, setHasCheckedOnce] = useState(false);
 
   const q = quiz[currentIndex];
+  const totalQuestions = quiz.length;
 
-  // detect last question (used to change the button text)
-  const isLastQuestion = currentIndex === quiz.length - 1;
+  // Check if it's the last question in the array
+  const isLastQuestion = currentIndex === totalQuestions - 1;
 
   const handleCheck = () => {
     if (selected === null) return;
+
+    // If the answer is correct, increment the score
+    if (selected === q.correctIndex) {
+      setScore((prev) => prev + 1);
+    }
+
     setChecked(true);
     setHasCheckedOnce(true);
   };
 
   const handleNext = () => {
-    // If we're on the last question, go to results page
     if (isLastQuestion) {
-      router.push("/result");
+      // Upon completion, send the score and total via URL parameters
+      router.push(`/result?score=${score}&total=${totalQuestions}`);
       return;
     }
 
-    // Otherwise, move to next question
+    // If not the last question, move to the next one and reset selection states
     setCurrentIndex((prev) => prev + 1);
     setSelected(null);
     setChecked(false);
   };
 
-
   return (
-    <main className="w-full h-screen bg-[#0E0F0F] ">
+    <main className="w-full h-screen bg-[#0E0F0F]">
       {/* Header */}
       <QuizHeader userName={userName} />
 
       {/* Content */}
       <section className="w-full px-26">
-        <div className="flex items-center justify-between gap-12 ">
-          {/* Left */}
+        <div className="flex items-center justify-between gap-12">
+          {/* Left: Question Area */}
           <div className="w-3xl">
             <QuestionArea
               q={q}
               currentIndex={currentIndex}
-              total={quiz.length}
+              total={totalQuestions}
               selected={selected}
               setSelected={setSelected}
               checked={checked}
               onCheck={handleCheck}
               onNext={handleNext}
-              isLastQuestion={isLastQuestion}  
+              isLastQuestion={isLastQuestion}
             />
           </div>
 
-          {/* Right */}
+          {/* Right: Visual Area */}
           <div className="flex-1 justify-center items-center">
             <VisualArea
               q={q}

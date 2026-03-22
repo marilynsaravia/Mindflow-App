@@ -1,142 +1,132 @@
 [
   {
     "id": 1,
-    "category": "Algorithmic Efficiency",
-    "question": "You need to check if a string of 1 million characters is a palindrome. What is the most space-efficient way to do this?",
+    "category": "Logical Deduction",
+    "question": "If all 'Zebs' are 'Zubs' and all 'Zubs' are 'Zabs', is every 'Zeb' also a 'Zab'?",
     "answers": [
-      "Create a reversed copy of the string and compare it to the original.",
-      "Use two pointers (start and end) and move them toward the center, comparing characters.",
-      "Use a Stack to push all characters and then pop them to compare.",
-      "Recursively call a function that slices the first and last characters."
+      "Yes, always.",
+      "No, never.",
+      "Only if 'Zebs' are also 'Zabs'.",
+      "It depends on the number of 'Zubs'."
     ],
-    "correctIndex": 1,
-    "correctAnswer": "Use two pointers (start and end) and move them toward the center.",
-    "explanation": "Two-pointer approach uses O(1) extra space. Reversing the string or using a stack would require O(n) extra memory, which is inefficient for very large strings."
+    "correctIndex": 0,
+    "correctAnswer": "Yes, always.",
+    "explanation": "This is a transitive relation. If A belongs to B, and B belongs to C, then A must belong to C."
   },
   {
     "id": 2,
-    "category": "System Design / Scalability",
-    "question": "Your API is experiencing high latency due to frequent, identical database queries. Which caching strategy is most effective for data that changes every 5 minutes?",
+    "category": "Pattern Recognition",
+    "question": "Look at this sequence: 2, 6, 18, 54, ... What number comes next?",
     "answers": [
-      "Client-side LocalStorage caching.",
-      "Write-through caching in the database.",
-      "Distributed Cache (e.g., Redis) with a TTL (Time To Live).",
-      "Hardcoding the results in the application code."
+      "108",
+      "162",
+      "72",
+      "216"
     ],
-    "correctIndex": 2,
-    "correctAnswer": "Distributed Cache (e.g., Redis) with a TTL.",
-    "explanation": "A distributed cache allows multiple app instances to share the data. A TTL (Time To Live) ensures the data is automatically refreshed after it becomes stale (e.g., every 5 minutes)."
+    "correctIndex": 1,
+    "correctAnswer": "162",
+    "explanation": "Each number is being multiplied by 3. 54 * 3 = 162."
   },
   {
     "id": 3,
-    "category": "Mathematics / Binary Logic",
-    "question": "A bitwise 'AND' operation is performed on 12 (binary 1100) and 10 (binary 1010). What is the decimal result?",
+    "category": "Problem Solving",
+    "question": "A shirt and a tie cost $110 in total. The shirt costs $100 more than the tie. How much does the tie cost?",
     "answers": [
-      "14",
-      "8",
-      "12",
-      "2"
+      "$10",
+      "$15",
+      "$5",
+      "$20"
     ],
-    "correctIndex": 1,
-    "correctAnswer": "8",
-    "explanation": "1100 AND 1010 results in 1000. In decimal, 1000 is 8."
+    "correctIndex": 2,
+    "correctAnswer": "$5",
+    "explanation": "If the tie is $5, then the shirt is $105 ($100 more). $105 + $5 = $110. If the tie were $10, the total would be $120."
   },
   {
     "id": 4,
-    "category": "Data Structures",
-    "question": "Which data structure would you use to implement a 'Undo' feature in a text editor?",
+    "category": "Lateral Thinking",
+    "question": "Some months have 31 days, others have 30 days. How many months have 28 days?",
     "answers": [
-      "Queue (FIFO)",
-      "Stack (LIFO)",
-      "Hash Table",
-      "Linked List"
+      "1",
+      "6",
+      "9",
+      "12"
     ],
-    "correctIndex": 1,
-    "correctAnswer": "Stack (LIFO)",
-    "explanation": "Undo operations follow the 'Last-In, First-Out' principle. The last action performed is the first one to be reversed."
+    "correctIndex": 3,
+    "correctAnswer": "12",
+    "explanation": "Every single month of the year has at least 28 days."
   },
   {
     "id": 5,
-    "category": "Performance Optimization",
-    "question": "When optimizing a React or Vue frontend application, what is the primary purpose of 'Code Splitting'?",
+    "category": "Sequence Logic",
+    "question": "Which of the following is the odd one out: 1, 4, 9, 16, 20, 25?",
     "answers": [
-      "To make the code easier for developers to read.",
-      "To reduce the initial bundle size and speed up the first paint.",
-      "To encrypt the source code for security.",
-      "To allow multiple programmers to work on the same file."
+      "9",
+      "16",
+      "20",
+      "25"
     ],
-    "correctIndex": 1,
-    "correctAnswer": "To reduce the initial bundle size and speed up the first paint.",
-    "explanation": "Code splitting allows you to load only the JavaScript needed for the current page, deferring the rest and significantly improving load times."
+    "correctIndex": 2,
+    "correctAnswer": "20",
+    "explanation": "The other numbers are all perfect squares: 1², 2², 3², 4², 5². 20 does not fit this pattern."
   },
   {
     "id": 6,
-    "category": "Big O / Logic",
-    "question": "You have a sorted array of 1,024 elements. What is the maximum number of comparisons a Binary Search will take to find an element?",
+    "category": "Spatial Reasoning",
+    "question": "If you rotate a 3D cube in your mind, how many corners (vertices) does it have?",
     "answers": [
-      "1,024",
-      "512",
-      "10",
-      "20"
+      "4",
+      "6",
+      "8",
+      "12"
     ],
     "correctIndex": 2,
-    "correctAnswer": "10",
-    "explanation": "Binary Search complexity is O(log2 n). Since 2^10 = 1,024, it takes at most 10 steps to find the target or determine it's not there."
+    "correctAnswer": "8",
+    "explanation": "A cube has 4 corners on the top face and 4 corners on the bottom face, totaling 8."
   },
   {
     "id": 7,
-    "category": "Backend Architecture",
-    "question": "What is the main risk of using a 'Monolithic' architecture as a development team grows very large?",
+    "category": "Number Logic",
+    "question": "In the Fibonacci sequence (1, 1, 2, 3, 5, 8...), each number is the sum of the two preceding ones. What is the next number after 8?",
     "answers": [
-      "Increased infrastructure costs.",
-      "Deployment bottlenecks and tight coupling between modules.",
-      "It is impossible to use modern languages.",
-      "Users will experience slower internet speeds."
+      "10",
+      "11",
+      "13",
+      "16"
     ],
-    "correctIndex": 1,
-    "correctAnswer": "Deployment bottlenecks and tight coupling.",
-    "explanation": "In a large monolith, a change in one small part requires redeploying the whole system, and teams often step on each other's toes due to high interdependence."
+    "correctIndex": 2,
+    "correctAnswer": "13",
+    "explanation": "To find the next number, you add the last two numbers: 5 + 8 = 13. This simple rule creates one of the most famous patterns in nature."
   },
   {
     "id": 8,
-    "category": "Mathematics / Probability",
-    "question": "A server has a 99.9% uptime (Three Nines). Roughly how much downtime is allowed per year?",
+    "category": "Data Logic",
+    "question": "Imagine a stack of plates. You can only add a new plate to the top, and you can only remove the one that is currently on top. If you add plates A, B, and C in that order, which one must you remove first?",
     "answers": [
-      "8.77 hours",
-      "3.65 days",
-      "52 minutes",
-      "1 hour"
+      "Plate A",
+      "Plate B",
+      "Plate C",
+      "Any of them"
     ],
-    "correctIndex": 0,
-    "correctAnswer": "8.77 hours",
-    "explanation": "0.1% of a year (365 days * 24 hours) is 8.766 hours. This is a standard metric for High Availability (HA)."
+    "correctIndex": 2,
+    "correctAnswer": "Plate C",
+    "explanation": "This is the 'Last-In, First-Out' (LIFO) principle of a Stack. Since Plate C was the last one added to the top, it must be the first one taken off."
   },
   {
     "id": 9,
-    "category": "Security / Web",
-    "question": "What is the best way to prevent SQL Injection in a modern application?",
-    "answers": [
-      "Manually stripping out single quotes from user input.",
-      "Using Prepared Statements (Parameterized Queries).",
-      "Changing the database password every month.",
-      "Using a front-end validation library."
-    ],
+    "category": "Process Logic",
+    "question": "In a supermarket queue, the first person to arrive is the first to be served. What is this data structure principle called?",
+    "answers": ["LIFO (Last-In, First-Out)", "FIFO (First-In, First-Out)", "Random Access", "Binary Search"],
     "correctIndex": 1,
-    "correctAnswer": "Using Prepared Statements (Parameterized Queries).",
-    "explanation": "Prepared statements ensure that the database treats user input as data, not as executable code, neutralizing the injection attempt."
+    "correctAnswer": "FIFO (First-In, First-Out)",
+    "explanation": "This is a 'Queue'. The first element added is the first one to be removed, just like a real-life line."
   },
   {
     "id": 10,
-    "category": "Concurrency",
-    "question": "What is a 'Deadlock' in multi-threaded programming?",
-    "answers": [
-      "A thread that finishes its execution too early.",
-      "Two or more threads are waiting for each other to release resources, causing a permanent stall.",
-      "A bug that causes the computer to shut down.",
-      "When a database table is deleted by mistake."
-    ],
+    "category": "IT Reasoning",
+    "question": "A bug in a program doubles the number of errors every hour. If it takes 48 hours to crash the whole system, at what hour was the system half-full of errors?",
+    "answers": ["24 hours", "47 hours", "12 hours", "40 hours"],
     "correctIndex": 1,
-    "correctAnswer": "Two or more threads are waiting for each other to release resources.",
-    "explanation": "Deadlock occurs when Thread A holds Resource 1 and waits for Resource 2, while Thread B holds Resource 2 and waits for Resource 1. Neither can proceed."
+    "correctAnswer": "47 hours",
+    "explanation": "If the errors double every hour, the step just before 'full' (48h) must be 'half-full'. So, at 47 hours it was half-full."
   }
 ]
